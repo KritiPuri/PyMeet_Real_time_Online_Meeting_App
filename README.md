@@ -102,32 +102,36 @@ python -m Client.meeting_gui_client
 
 ---
 
-## 📸 Screenshots & Outputs
+## 📸 Screenshots & Application Outputs
 
-The application interface and features are demonstrated in the following screenshots located in the `outputs/` folder:
+The application interface and features are demonstrated in the following screenshots:
 
 ### 1. Login Screen
-![Login Screen](outputs/1.png)
+<img src="PyMeet_Real_time_Online_Meeting_App-main/outputs/1.png" alt="Login Screen" width="600"/>
+
 - User authentication interface
 - Username and email input fields
 - Secure login with validation
 
 ### 2. Lobby Interface
-![Lobby Interface](outputs/2.png)
+<img src="PyMeet_Real_time_Online_Meeting_App-main/outputs/2.png" alt="Lobby Interface" width="600"/>
+
 - Real-time room listing
 - Active user count display
 - Create/Join room functionality
 - User-friendly navigation
 
 ### 3. Meeting Room - Text Chat
-![Meeting Room](outputs/3.png)
+<img src="PyMeet_Real_time_Online_Meeting_App-main/outputs/3.png" alt="Meeting Room" width="600"/>
+
 - Real-time text chat interface
 - Room member list
 - Message history
 - Audio/Video controls
 
 ### 4. Video Call Features
-![Video Call](outputs/4.png)
+<img src="PyMeet_Real_time_Online_Meeting_App-main/outputs/4.png" alt="Video Call" width="600"/>
+
 - Multi-user video conferencing
 - Real-time video streaming
 - Audio communication
@@ -168,13 +172,15 @@ PyMeet_Real_time_Online_Meeting_App-main/
 │   ├── gui_lobby.py             # Lobby interface
 │   ├── gui_room.py              # Meeting room interface
 │   ├── gateway.py               # Client gateway
-│   └── requirements.txt         # Client dependencies
+│   ├── requirements.txt         # Client dependencies
+│   └── assets/                  # Client assets
 ├── server/                      # Server-side code
 │   ├── tcp_server.py            # TCP server implementation
 │   ├── udp_server.py            # UDP server implementation
 │   ├── auth.py                  # Authentication logic
 │   ├── rooms.py                 # Room management
 │   ├── routing.py               # Message routing
+│   ├── protocol.py              # Protocol definitions
 │   └── users_db.json            # User database
 ├── advanced_feature/            # Advanced features
 │   ├── video_call.py            # Video call implementation
@@ -182,7 +188,8 @@ PyMeet_Real_time_Online_Meeting_App-main/
 │   ├── config_server.py         # Server configuration
 │   └── config_client.py         # Client configuration
 ├── gateway/                     # WebSocket gateway
-│   └── gateway_ws.py            # WebSocket implementation
+│   ├── gateway_ws.py            # WebSocket implementation
+│   └── requirements.txt         # Gateway dependencies
 └── outputs/                     # Application screenshots
     ├── 1.png                    # Login screen
     ├── 2.png                    # Lobby interface
